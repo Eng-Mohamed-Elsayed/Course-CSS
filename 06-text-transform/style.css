@@ -1,0 +1,9 @@
+/* 
+uppercase : MOHAMED ELSAYED
+lowercase : mohamed elsayed
+capitalize : Mohamed Elsayed
+*/
+
+h1 {
+  text-transform: capitalize;
+}
