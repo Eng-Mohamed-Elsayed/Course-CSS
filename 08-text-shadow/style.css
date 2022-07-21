@@ -1,0 +1,10 @@
+/* 
+text-shadow: x y blur color;
+
+x = horizontal 
+y = vertical
+
+*/
+h1 {
+  text-shadow: 5px 0px 10px red;
+}
