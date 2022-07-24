@@ -1,0 +1,16 @@
+h1,
+h2 {
+  color: red;
+  text-transform: uppercase;
+}
+
+main article p {
+  color: green;
+}
+
+footer p {
+  background-color: gray;
+  color: white;
+  font-size: 30;
+  text-align: center;
+}
