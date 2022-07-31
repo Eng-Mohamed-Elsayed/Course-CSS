@@ -1,0 +1,35 @@
+ul.lang li:first-child {
+  color: red;
+}
+
+ul.lang li:last-child {
+  color: green;
+}
+
+ul.lang li:nth-child(3) {
+  color: purple;
+}
+
+ul.lang li:nth-child(odd) {
+  list-style-type: none;
+}
+
+ul.lang li:nth-child(even) {
+  list-style-type: square;
+}
+
+main p:first-child {
+  color: red;
+}
+
+main p:last-child {
+  color: blue;
+}
+
+main p:nth-child(3) {
+  color: teal;
+}
+ul.summary li:nth-last-child(3) {
+  font-size: 20px;
+  color: red;
+}
