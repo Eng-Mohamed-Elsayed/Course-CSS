@@ -1,0 +1,14 @@
+h1 {
+  /* color: purple; */
+  color: rgb(0, 0, 255);
+}
+h2 {
+  color: rgba(2500, 0, 0, 0.3);
+}
+
+p {
+  /* 255 -> FF */
+  /* d9 -> opacity */
+  /* color: #f2ff00d9; */
+  color: #196be7;
+}
