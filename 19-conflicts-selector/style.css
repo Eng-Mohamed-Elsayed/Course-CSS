@@ -1,0 +1,24 @@
+/* #author {
+  color: red;
+} */
+/* #author {
+  color: gray;
+} */
+
+/* .author {
+  color: black;
+  font-size: 30px;
+} */
+
+/* p:first-child {
+  color: pink;
+} */
+
+/* p:first-child {
+  color: yellow;
+  font-size: 40px;
+}  */
+
+p {
+  color: yellow;
+}
