@@ -1,24 +1,22 @@
-/* #author {
+#author {
   color: red;
-} */
+}
+
 /* #author {
-  color: gray;
-} */
-
-/* .author {
-  color: black;
-  font-size: 30px;
-} */
-
-/* p:first-child {
   color: pink;
 } */
+.author {
+  color: green;
+}
+/*
+.author {
+  color: blue;
+} */
 
-/* p:first-child {
+p:first-child {
   color: yellow;
-  font-size: 40px;
-}  */
+}
 
 p {
-  color: yellow;
+  color: gray;
 }
