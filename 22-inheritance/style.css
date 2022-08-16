@@ -1,0 +1,11 @@
+body {
+  color: red;
+}
+p {
+  color: teal;
+}
+
+ul {
+  list-style-type: none;
+  color: green;
+}
