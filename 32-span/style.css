@@ -1,0 +1,23 @@
+/* .red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+} */
+
+span:nth-child(1) {
+  color: red;
+}
+
+span:nth-child(2) {
+  color: blue;
+}
+
+span:nth-child(3) {
+  color: green;
+}
