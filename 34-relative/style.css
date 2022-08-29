@@ -1,0 +1,11 @@
+h1,
+p {
+  border: 1px solid red;
+}
+
+.front-end {
+  color: green;
+  position: relative;
+  bottom: 80px;
+  left: 50px;
+}
