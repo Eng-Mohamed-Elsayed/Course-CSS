@@ -1,0 +1,34 @@
+section.eg-1 h1::first-letter {
+  color: red;
+  font-size: 50px;
+}
+
+section.eg-1 p::first-line {
+  color: blue;
+  font-style: italic;
+}
+section.eg-1 p {
+  color: pink;
+}
+
+ul li::marker {
+  color: green;
+  font-size: 30px;
+}
+
+p::selection {
+  color: #fff;
+  background-color: orange;
+}
+
+.content h1::after {
+  content: " Elsayed";
+  color: blue;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.content h1::before {
+  content: "* ";
+  color: red;
+}
