@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  float: left;
+}
+
+nav {
+  background-color: red;
+  float: right;
+}
+
+/* .clearfix {
+  clear: left;
+}
+
+.clearfix-1 {
+  clear: right;
+} */
+
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: block;
+}
