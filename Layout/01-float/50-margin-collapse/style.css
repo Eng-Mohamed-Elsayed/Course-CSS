@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  /* Lesson 49 box Sizing  */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+.box--1 {
+  background-color: red;
+  height: 50px;
+  width: 300px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.box--2 {
+  margin-top: 50px;
+  background-color: pink;
+  height: 50px;
+  width: 300px;
+}
