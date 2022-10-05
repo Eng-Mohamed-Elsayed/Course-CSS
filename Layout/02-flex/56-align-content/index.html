@@ -5,19 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Justify Content</title>
+  <title>Algin Content</title>
   <style>
     .parent {
       height: 800px;
       color: plum;
       border: 10px solid black;
       display: flex;
-      flex-direction: row;
+      /* flex-direction: row;
+      flex-wrap: wrap-reverse; */
+      flex-flow: column wrap;
       /* 
-      flex-start | flex-end, center
+       flex-start | flex-end, center
       space-between | space-evenly | space-around
       */
-      justify-content: space-between;
+      align-content: space-evenly;
+
+
     }
 
     .child {
@@ -39,7 +43,8 @@
       <section class="child">child 1</section>
       <section class="child">child 2</section>
       <section class="child">child 3</section>
-
+      <section class="child">child 4</section>
+      <section class="child">child 5</section>
 
     </section>
   </main>
