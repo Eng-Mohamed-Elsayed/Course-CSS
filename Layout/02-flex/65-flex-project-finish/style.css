@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  background-color: transparent;
+  margin: auto;
+}
+/* Header */
+header {
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 3px 4px 12px 0px grey;
+}
+
+.logo-name {
+  background-color: transparent;
+  width: 60%;
+  align-self: center;
+  margin-left: 5px;
+}
+
+nav {
+  background-color: transparent;
+  width: 40%;
+  align-self: center;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: green;
+  font-size: 22px;
+}
+
+.active {
+  color: blue;
+}
+
+/* main */
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+main {
+  height: 250px;
+  width: 60%;
+  background-color: transparent;
+  display: flex;
+}
+
+.image-profile {
+  height: 100%;
+  width: 40%;
+  background-color: transparent;
+}
+
+.image-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-profile {
+  height: 100%;
+  width: 60%;
+  background-color: transparent;
+  padding: 10px;
+}
+.info-profile p {
+  margin-top: 4px;
+}
+
+ul.dashed {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+ul.dashed li {
+  padding: 5px;
+}
+
+ul.dashed li::before {
+  content: "\002D\0020";
+}
+
+/* Aside  */
+aside {
+  height: 250px;
+  width: 40%;
+  background-color: transparent;
+}
+ul.course li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+}
+ul.course img {
+  width: 50px;
+}
+
+.info-course {
+  padding: 10px 5px;
+}
+
+.info-course a {
+  color: blue;
+}
+
+.info-course a:hover {
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
