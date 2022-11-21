@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Justify-content</title>
+  <title>Justify Items</title>
   <style>
     * {
       margin: 0;
@@ -24,11 +24,11 @@
       padding: 5px;
       height: 800px;
       grid-template-columns: repeat(3, auto);
-      /* Justify content start|  center, end, space-between, space-evenly, space-around (horizontal) */
-      justify-content: stretch;
-
-      place-content: start space-between;
-
+      /* justify-items : stretch |  start,center, end,  (Horizontal)  */
+      /* justify-items: end; */
+      align-items: stretch;
+      justify-items: stretch;
+      place-items: center start;
     }
 
     .item {
