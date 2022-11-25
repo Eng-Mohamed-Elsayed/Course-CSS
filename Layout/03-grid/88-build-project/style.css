@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --colorHeader: #f7f7f7;
+  --colorFooter: #000;
+  --colorBlue: #0000ff;
+  --colorGreen: #008000;
+  --textColor: #fff;
+  --fontSizeSmall: 1rem;
+  --fontSizeMedium: 2rem;
+  --fontSizeLarge: 3rem;
+  --paddingDefault: 1rem;
+}
+
+section.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+/* ********************** Header **************************** */
+header {
+  background-color: var(--colorHeader);
+  grid-area: header;
+  /* x, y, blur  */
+  box-shadow: 5px 1px 10px gray;
+  padding: var(--paddingDefault);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logoName {
+  font-size: var(--fontSizeMedium);
+}
+
+nav {
+  place-self: center end;
+}
+
+nav a {
+  padding: var(--paddingDefault);
+  font-size: calc(var(--fontSizeSmall) + 5px);
+  color: var(--colorFooter);
+  text-decoration: none;
+}
+nav a.active {
+  color: var(--colorBlue);
+}
+
+nav a:hover,
+nav a.active:hover {
+  color: var(--colorGreen);
+}
+
+/* ************************ End Header *************************** */
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.image-profile {
+  align-self: stretch;
+}
+
+.info-profile {
+  padding: var(--paddingDefault);
+}
+
+.info-profile p,
+ul.lang li {
+  padding: calc(var(--paddingDefault) - 10px);
+}
+ul.lang {
+  list-style-type: none;
+}
+ul.lang li::before {
+  content: "\002D\0020";
+}
+
+/* ********************* Aside  ************************* */
+aside {
+  grid-area: aside;
+}
+
+ul.list-course a:hover {
+  color: var(--colorGreen);
+  text-decoration: none;
+  font-size: calc(var(--fontSizeMedium) - 10px);
+}
+
+.course {
+  list-style-type: none;
+  display: grid;
+  /* grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, auto); */
+  /* rows / column */
+  grid-template: repeat(3, auto) / 1fr 4fr;
+  row-gap: 5px;
+}
+.info-course {
+  padding: var(--paddingDefault);
+  align-self: center;
+}
+/* ****************** Footer ******************** */
+footer {
+  background-color: var(--colorFooter);
+  grid-area: footer;
+  color: var(--textColor);
+  padding: var(--paddingDefault);
+  font-size: var(--fontSizeMedium);
+  text-align: center;
+}
