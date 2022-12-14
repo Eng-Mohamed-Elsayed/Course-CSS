@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 2px dashed black;
+      margin: 10% auto;
+      padding: 10px;
+
+
+    }
+
+    .box-2 {
+      background-color: red;
+      width: 300px;
+      height: 300px;
+      position: relative;
+
+      transition: 3s;
+    }
+
+    .box-2 h1 {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+    }
+
+    .box-2:hover {
+      /* 
+      deg => degrees  0, 45, 90, 180, 360. 
+      turn => Turns   0, 0.125, 0.25, 0.5, 1.
+      */
+
+      /* transform: rotate(180deg); */
+      /* transform: rotate(0.12turn); */
+      /* transform: rotate(-45deg); */
+      /* transform: rotate(-0.12turn); */
+
+      /* transform: scaleX(2); */
+      /* no override */
+      transform: scaleX(2) rotate(45deg);
+
+
+      /* RotateX & RotateY & RotateZ -> 3D */
+    }
+  </style>
+</head>
+
+<body>
+  <section class="box">
+
+    <Section class="box-2">
+      <h1>mohamed Elsayed</h1>
+    </Section>
+
+  </section>
+</body>
+
+</html>
