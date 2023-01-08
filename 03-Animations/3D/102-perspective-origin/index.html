@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origin 3D</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 2px dashed black;
+      margin: 350px auto;
+      padding: 10px;
+      perspective: 200px;
+
+      /* perspective-origin: center center; */
+      /* perspective-origin: 50% 50%; */
+      /* perspective-origin: left top; */
+      /* perspective-origin: right top; */
+      /* perspective-origin: center top; */
+      /* perspective-origin: center bottom; */
+      /* perspective-origin: bottom left; */
+      /* perspective-origin: bottom right; */
+      /* Axis X */
+      /* 
+       - css unit : px, %, rem, em, vh, vw
+       - keyword 
+          * left -> 0%
+          * center -> 50%
+          * right  -> 100%
+      */
+
+      /* Axis Y */
+      /* 
+       - css unit : px, %, rem, em, vh, vw
+       - keyword 
+          * top -> 0%
+          * center -> 50%
+          * bottom  -> 100%
+      */
+      perspective-origin: 100% 0%;
+
+    }
+
+    .box-2 {
+      background-color: indigo;
+      width: 300px;
+      height: 300px;
+      transition: 1s;
+
+
+    }
+
+    .box-2:hover {
+      transform: rotateX(45deg);
+
+    }
+  </style>
+</head>
+
+<body>
+  <section class="box">
+    <Section class="box-2">
+    </Section>
+  </section>
+</body>
+
+</html>
