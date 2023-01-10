@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteration Count </title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+
+
+    .box {
+      background: red;
+      width: 150px;
+      height: 150px;
+      margin: 80px auto;
+      animation-name: changeColor;
+      animation-duration: 5s;
+      /* animation-iteration-count: 2; */
+      animation-iteration-count: infinite;
+
+
+    }
+
+    @keyframes changeColor {
+      0% {
+        background: purple;
+      }
+
+      50% {
+        background: yellow;
+      }
+
+      100% {
+        background: aqua;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="box">
+  </section>
+
+
+</body>
+
+</html>
