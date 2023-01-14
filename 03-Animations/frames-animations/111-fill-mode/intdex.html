@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation fill mode </title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+
+
+    .box {
+      background: red;
+      width: 150px;
+      height: 150px;
+      margin: 50px 0;
+      animation-name: change-translate;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+
+      /* fill Model : none  */
+      /* animation-fill-mode: none; */
+      /* forwards last frame */
+      /* animation-fill-mode: forwards; */
+      /* backwards */
+      /* animation-fill-mode: backwards; */
+      animation-delay: 2s;
+      animation-fill-mode: both;
+    }
+
+
+
+    @keyframes change-translate {
+      0% {
+        transform: translateX(0) rotate(-45deg);
+        background: purple;
+
+      }
+
+      25% {
+        transform: translateX(75px);
+
+      }
+
+      50% {
+        transform: translateX(150px);
+      }
+
+      100% {
+        transform: translateX(350px) rotate(90deg);
+        background: aqua;
+
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="box">
+  </section>
+
+
+</body>
+
+</html>
