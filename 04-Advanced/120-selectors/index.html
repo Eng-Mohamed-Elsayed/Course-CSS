@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture Two</title>
+  <style>
+    /*  11  selector  Element + other Element */
+    /*  Selects the first <p>element that is placed immediately after <section> elements */
+    /* section+p {
+      color: orangered;
+    } */
+
+    /* 12 selector Element ~ other Element */
+    /* note effect include section   */
+    /* Selects every <section> element that is preceded by a <p> element */
+
+    /* p~section {
+      color: deeppink;
+    } */
+
+    /* 13 [Attribute] */
+    /* [class] {
+      color: green;
+    } */
+
+    /* 14 Element[Attribute] */
+    /* span[class] {
+      font-weight: bold;
+      font-size: 30px;
+      color: aqua;
+    } */
+    /* 15  [Attribute='value'] */
+    /* [class='el-3'] {
+      color: purple;
+    } */
+
+    /* 16 Element[Attribute='value'] */
+    /* span[class='el-3'] {
+      background-color: pink;
+    } */
+
+    /* 17 Contains a word  */
+    /* e.g : 'el-3 ss' ✅  | 'el-3ss'  ❌ */
+    /* [class~='ss'] {
+      color: green;
+    } */
+
+    /* 18 contains a String */
+    /* e.g : 'el-3 ss' ✅  | 'el-3ss'  ✅ */
+    /* [class *='ss'] {
+      color: orange;
+    } */
+
+    /* 19 start with a String  */
+    /* [class^='el'] {
+      font-weight: bold;
+      background: yellow;
+    } */
+
+    /* 20 Element:not([Attribute='value']) */
+    p:not([class='p1']) {
+      color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="el-1 style-font">section one
+    <a href="#">test</a>
+
+  </section>
+  <p>paragraph</p>
+  <section class="el-2">section two</section>
+  <section class="el-3">section there</section>
+  <h2 class="style-font">header 2</h2>
+  <section class="el-4 style-font">section four
+
+    <!-- <section></section> -->
+    <p>En</p>
+    <span class="el-3">AR</span>
+
+
+
+  </section>
+
+  <br>
+  <span class="test">span</span>
+  <section class="el-5 ">section five
+    <h5>header 5 before child section five </h5>
+    <section class="el-5-1ss"> child section five 1</section>
+
+  </section>
+  <br>
+  <nav>
+    <a href="#" id="active">Home</a>
+    <a href="#">Course</a>
+    <h4>direct child</h4>
+    <p>paragraph</p>
+    <a href="#">About</a>
+  </nav>
+
+  <section class="eloo box  front-face ss  ">
+    <h1>Arabic</h1>
+    <h2>english</h2>
+    <section>section
+      <h2>english</h2>
+      <p class="p1">paragraph1</p>
+    </section>
+
+  </section>
+  </section>
+  <section class="front-face "></section>
+  <p>paragraph</p>
+  <p>two</p>
+
+
+</body>
+
+</html>
