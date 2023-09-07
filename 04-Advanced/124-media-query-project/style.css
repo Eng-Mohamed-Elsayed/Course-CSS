@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 14px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 14px;
+}
+
+/* smart phone */
+@media screen and (max-width: 767px) {
+  .container {
+    row-gap: 10px;
+  }
+
+  section {
+    width: 100%;
+    height: 400px;
+    border: 2px solid purple;
+  }
+}
+/* tablet  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    /* width: 45%; */
+    flex-grow: 1;
+    height: 400px;
+    border: 2px solid purple;
+  }
+}
+/* Desktop  */
+@media screen and (min-width: 1024px) {
+  .container {
+    column-gap: 2px;
+  }
+  section {
+    width: 24%;
+    /* flex-grow: 1; */
+    height: 400px;
+    border: 2px solid red;
+  }
+}
