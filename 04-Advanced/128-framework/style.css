@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 20px 0 30px 40px;
+}
+
+.center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
